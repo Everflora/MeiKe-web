@@ -1,0 +1,15 @@
+:root {color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; background:#f7f8f1; color:#224c38}
+html,body {margin:0; width:100%; height:100%; overscroll-behavior:none}
+#loading {position:fixed; z-index:9999; background:#f7f8f1; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:24px; text-align:center; box-sizing:border-box}
+#loading img {border-radius:19px; box-shadow:0 8px 30px #234d3818}
+#loading h1 {font-size:27px; letter-spacing:4px; margin:20px 0 0}
+#loading p {line-height:1.8; margin:12px 0}
+.hint {color:#6c786d; font-size:13px; max-width:300px}
+a {color:inherit; font-size:13px; margin-top:24px}
+button {font:inherit; color:inherit; background:#e8eddc; border:0; border-radius:12px; padding:10px 14px; cursor:pointer}
+[hidden] {display:none !important}
+#pwa-notice {position:fixed; z-index:10000; left:16px; right:16px; bottom:calc(88px + env(safe-area-inset-bottom)); max-width:480px; margin:auto; display:flex; align-items:center; gap:10px; padding:12px 14px; border:1px solid #cbd6c5; border-radius:16px; background:#f2f5eb; box-shadow:0 5px 24px #142a2820; font-size:13px}
+#pwa-message {flex:1; line-height:1.5}
+#pwa-update {font-size:12px; padding:8px; flex-shrink:0}
+#pwa-dismiss {padding:3px 6px; background:transparent; font-size:20px}
+@media(prefers-color-scheme:dark) {:root {background:#102018; color:#e8eedf}#loading {background:#102018}.hint {color:#b2bfad}button {background:#314333}#pwa-notice {background:#203126; border-color:#41513e}}
